@@ -1,6 +1,5 @@
-//VARIABLES
 
-//variable asignada (let ó const) + nombreVarible + operador de asignacion +  contenido
+//FUNCIÓN
 
 function saludoGenerico() {
     alert("Bienvenido a Zasa Arte")
@@ -15,7 +14,7 @@ function saludoEspecifico(nombre) {
     alert(`Hola ${nombre}`)
 }
 
-
+//variable asignada (let ó const) + nombreVarible + operador de asignacion +  contenido
 //selecionar producto
 
 let tipoProducto = prompt("Que producto de arte busca?")
@@ -28,7 +27,6 @@ let nombreCompleto = `${tipoProducto}`
 console.log(nombreCompleto)
 
 //CONDICIONALES
-//Se ejecuta una sola vez el codigo
 
 let nombreProductos = parseInt(prompt("Escriba el numero de la tecnica que quiera elegir: 1)Tecnica Artistica, 2)Ilustración 3)Impresión"))
  while (isNaN(nombreProductos)) {
