@@ -30,7 +30,11 @@ console.log(nombreCompleto)
 //CONDICIONALES
 //Se ejecuta una sola vez el codigo
 
- let  nombreProductos= prompt("Escriba el numero de la tecnica que quiera elegir: 1)Tecnica Artistica, 2)Ilustración 3)Impresión")
+let nombreProductos = parseInt(prompt("Escriba el numero de la tecnica que quiera elegir: 1)Tecnica Artistica, 2)Ilustración 3)Impresión"))
+ while (isNaN(nombreProductos)) {
+    alert("Ingreso un valor no númerico, por favor corrija")
+    nombreProductos = parseInt(prompt("Escriba el numero de la tecnica que quiera elegir: 1)Tecnica Artistica, 2)Ilustración 3)Impresión"))
+}
 
 if (nombreProductos == 1) {
     alert("Ha elegido cuadro")
@@ -47,7 +51,7 @@ if (nombreProductos == 1) {
 //Por conteo - FOR
 
 for (let i = 0; i < 2; i++){
-    let dimensionesProducto = prompt("Escriba una dimensión en centimetros")
+    let dimensionesProducto = prompt("Escriba una dimensión, por ejemplo: 50 x 70 cm")
     alert(`el cuadro Nro ${i},sera de ${dimensionesProducto}`)
 } 
 alert("Su pedido quedo registrado") 
